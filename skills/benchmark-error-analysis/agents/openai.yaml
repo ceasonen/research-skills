@@ -1,0 +1,4 @@
+interface:
+  display_name: "Benchmark Error Analysis"
+  short_description: "Inspect metrics, slices, and regressions"
+  default_prompt: "Use $benchmark-error-analysis to explain these results and design the next evaluation pass."

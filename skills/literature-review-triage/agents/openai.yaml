@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Review Triage"
+  short_description: "Survey CS/EE papers and build evidence tables"
+  default_prompt: "Use $literature-review-triage to map this topic, compare papers, and identify the strongest reproduction targets."

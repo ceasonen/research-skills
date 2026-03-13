@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retrieval RAG Systems"
+  short_description: "Design and debug retrieval and grounding pipelines"
+  default_prompt: "Use $retrieval-rag-systems to review this RAG pipeline for retrieval quality, grounding, latency, and cost."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Peer Review Rebuttal"
+  short_description: "Draft calm, evidence-backed reviewer responses"
+  default_prompt: "Use $peer-review-rebuttal to draft strong rebuttal responses and a revision plan for these reviews."

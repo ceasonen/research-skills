@@ -1,0 +1,4 @@
+interface:
+  display_name: "Control And State Estimation"
+  short_description: "Design filters, sensor fusion, and state models"
+  default_prompt: "Use $control-systems-state-estimation to review this estimator or control-oriented state model."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Systems Performance Review"
+  short_description: "Budget and debug system bottlenecks"
+  default_prompt: "Use $systems-performance-review to analyze this design for latency, throughput, memory, and reliability risks."

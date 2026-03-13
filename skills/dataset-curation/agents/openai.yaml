@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dataset Curation"
+  short_description: "Design clean datasets and leakage-safe splits"
+  default_prompt: "Use $dataset-curation to audit this dataset plan for schema, splits, provenance, and leakage risks."

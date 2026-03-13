@@ -1,0 +1,4 @@
+interface:
+  display_name: "PCB Schematic Review"
+  short_description: "Review board power, clocks, resets, and interfaces"
+  default_prompt: "Use $pcb-schematic-review to audit this board design and identify the highest-risk bring-up issues."

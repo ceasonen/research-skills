@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Finetuning Stack"
+  short_description: "Plan and debug SFT, LoRA, and post-training pipelines"
+  default_prompt: "Use $llm-finetuning-stack to design or debug this LLM finetuning pipeline."

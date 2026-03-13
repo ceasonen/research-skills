@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper To Implementation"
+  short_description: "Convert papers and specs into build plans"
+  default_prompt: "Use $paper-to-implementation to turn this paper or spec into a staged implementation plan."

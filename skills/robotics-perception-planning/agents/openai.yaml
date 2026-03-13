@@ -1,0 +1,4 @@
+interface:
+  display_name: "Robotics Perception Planning"
+  short_description: "Analyze robot perception, estimation, and planning stacks"
+  default_prompt: "Use $robotics-perception-planning to review this robotics pipeline or experiment plan."

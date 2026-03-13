@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compiler Runtime Analysis"
+  short_description: "Profile IR lowering, codegen, and runtime overhead"
+  default_prompt: "Use $compiler-runtime-analysis to explain this compiler or runtime performance behavior."

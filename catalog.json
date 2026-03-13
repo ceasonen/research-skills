@@ -1,0 +1,329 @@
+{
+  "skill_count": 27,
+  "skills": [
+    {
+      "name": "accelerator-kernel-optimization",
+      "description": "Review and optimize kernels and data movement for CUDA, Triton, Metal, OpenCL, SIMD, and accelerator-style workloads. Use when diagnosing throughput gaps, memory bandwidth limits, launch overhead, occupancy issues, kernel fusion tradeoffs, or host-device transfer bottlenecks in ML and systems research.",
+      "path": "skills/accelerator-kernel-optimization",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "benchmark-error-analysis",
+      "description": "Build evaluation plans and error-analysis workflows for ML, retrieval, generation, systems benchmarks, and embedded or perception pipelines. Use when adding metrics, checking regressions, designing ablations, interpreting leaderboard changes, or debugging why a model improved on one slice and failed on another.",
+      "path": "skills/benchmark-error-analysis",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "codebase-onboarding",
+      "description": "Rapidly map an unfamiliar research or engineering codebase, identify entry points, execution paths, configuration layers, tests, and risky modules. Use when inheriting a project, preparing a reproduction, reviewing a repo for collaboration, or locating where to modify a model, runtime, compiler, or hardware flow.",
+      "path": "skills/codebase-onboarding",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "compiler-runtime-analysis",
+      "description": "Analyze compiler, runtime, and code generation systems including IR lowering, scheduling, memory layout, graph compilation, autotuning, and runtime overhead. Use when profiling a compiler stack, comparing generated code, debugging performance cliffs, or evaluating compiler research claims.",
+      "path": "skills/compiler-runtime-analysis",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "control-systems-state-estimation",
+      "description": "Design and debug state estimation, filtering, system identification, and control-oriented models for robotics, autonomous systems, and embedded control. Use when choosing observers, Kalman variants, sensor fusion structure, stability assumptions, or diagnosing drift, lag, and closed-loop estimation failures.",
+      "path": "skills/control-systems-state-estimation",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "dataset-curation",
+      "description": "Create and audit datasets for CS and EE research, including schema design, collection pipelines, deduplication, split strategy, leakage prevention, labeling QA, licensing, and provenance tracking. Use when building a dataset, merging corpora, preparing train, validation, and test splits, or validating a benchmark before publication.",
+      "path": "skills/dataset-curation",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "distributed-systems-debugging",
+      "description": "Debug distributed systems behavior including consistency issues, queue backlogs, retries, partitions, replica divergence, tail latency, and backpressure. Use when a service mesh, stream processor, storage system, scheduler, or multi-node research system behaves differently under scale than in local tests.",
+      "path": "skills/distributed-systems-debugging",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "dsp-algorithm-design",
+      "description": "Design and review digital signal processing pipelines including sampling, filtering, transforms, detection, estimation, feature extraction, fixed-point concerns, and implementation tradeoffs. Use when developing or debugging DSP methods for communications, sensing, audio, imaging, robotics, or embedded systems.",
+      "path": "skills/dsp-algorithm-design",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "embedded-firmware-debugging",
+      "description": "Debug embedded C, C++, or Rust firmware, RTOS tasks, drivers, DMA, interrupts, peripherals, and board bring-up. Use when tracking timing bugs, register misconfiguration, boot failures, memory corruption, peripheral deadlocks, or hardware-software integration issues on MCUs, SoCs, and edge devices.",
+      "path": "skills/embedded-firmware-debugging",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "hardware-formal-verification",
+      "description": "Apply assertion-based and property-driven reasoning to RTL, interfaces, FIFOs, arbiters, and control logic. Use when writing SystemVerilog assertions, planning SymbiYosys checks, proving safety and liveness properties, or strengthening an RTL module beyond simulation-only confidence.",
+      "path": "skills/hardware-formal-verification",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "latex-build-camera-ready",
+      "description": "Build and debug LaTeX research papers, posters, and reports; fix bibliography, figures, tables, reviewer-mode toggles, and camera-ready packaging. Use when a paper compiles poorly, references break, margins overflow, anonymization must be restored, or a submission artifact needs cleanup.",
+      "path": "skills/latex-build-camera-ready",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "literature-review-triage",
+      "description": "Find, filter, and compare CS/EE papers across arXiv, OpenReview, Semantic Scholar, OpenAlex, venue pages, and code repos. Use when building a reading list, surveying a subfield, checking novelty, mapping SOTA, or extracting datasets, metrics, baselines, and limitations from papers.",
+      "path": "skills/literature-review-triage",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "llm-finetuning-stack",
+      "description": "Plan, debug, and evaluate LLM adaptation pipelines including continued pretraining, SFT, LoRA or QLoRA, preference optimization, reward modeling, and post-training evaluation. Use when building a finetuning stack, diagnosing collapse, choosing data mixtures, or deciding whether a method improved capability or only benchmark fit.",
+      "path": "skills/llm-finetuning-stack",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "ml-experiment-planner",
+      "description": "Plan ML experiments, ablations, hyperparameter sweeps, and resource budgets for research projects in AI, systems, and signal-processing-adjacent work. Use when starting an experiment series, defining baselines, sizing GPU or CPU needs, or turning ideas into a reproducible run plan.",
+      "path": "skills/ml-experiment-planner",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "multimodal-evaluation",
+      "description": "Evaluate and debug vision-language, audio-language, video-language, document, and embodied multimodal systems. Use when designing benchmark suites, auditing modality balance, analyzing hallucinations, grounding errors, OCR failures, temporal failures, or comparing models across tasks that mix perception and reasoning.",
+      "path": "skills/multimodal-evaluation",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "paper-to-implementation",
+      "description": "Turn a paper, tech report, benchmark writeup, or architecture figure into an implementation plan for ML, systems, or hardware-software research. Use when reproducing a method, converting equations into modules, extracting pseudocode, filling missing details, or building an MVP from a PDF or spec.",
+      "path": "skills/paper-to-implementation",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "pcb-schematic-review",
+      "description": "Review schematics, PCB planning, board-level interfaces, power trees, clocks, reset networks, and layout-sensitive risks. Use when checking a board design, preparing bring-up, auditing connector or peripheral choices, or debugging a hardware-software integration issue rooted in the board itself.",
+      "path": "skills/pcb-schematic-review",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "peer-review-rebuttal",
+      "description": "Draft reviewer responses, rebuttals, artifact-evaluation clarifications, and revision plans for CS and EE papers. Use when addressing reviewer concerns, triaging accept-versus-reject risks, planning extra experiments, or rewriting claims so they match the evidence without sounding defensive.",
+      "path": "skills/peer-review-rebuttal",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "research-direction-scouting",
+      "description": "Scout and rank promising research directions in EECS using novelty, feasibility, available tooling, data access, benchmark fit, and publication risk. Use when choosing a thesis direction, starting a new project, framing a workshop or conference submission, or deciding whether an idea is incremental, premature, or genuinely worth pursuing.",
+      "path": "skills/research-direction-scouting",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "research-paper-writing",
+      "description": "Improve academic paper writing quality for ML/CV/NLP-style papers with clear section structure, paragraph flow, and reviewer-facing presentation. Use when drafting or revising Abstract, Introduction, Related Work, Method, Experiments, or Conclusion; polishing figures/tables; checking claim-support alignment; or performing self-review before submission.",
+      "path": "skills/research-paper-writing",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 39
+    },
+    {
+      "name": "research-reproducibility-audit",
+      "description": "Audit a paper, codebase, benchmark, or artifact for reproducibility gaps in ML, systems, and hardware research. Use when checking whether claims can be reproduced, comparing paper-versus-code behavior, validating release readiness, or preparing an artifact evaluation package.",
+      "path": "skills/research-reproducibility-audit",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "retrieval-rag-systems",
+      "description": "Design, evaluate, and debug retrieval and RAG systems including indexing, chunking, embedding choice, reranking, context packing, citation grounding, and latency-cost tradeoffs. Use when building or auditing a search, QA, or agent memory stack for research or production.",
+      "path": "skills/retrieval-rag-systems",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "robotics-perception-planning",
+      "description": "Design and debug robotics pipelines spanning perception, localization, mapping, planning, control interfaces, and sim-to-real transfer. Use when evaluating a robot stack, diagnosing failures in closed-loop behavior, planning experiments, or comparing perception-driven versus policy-driven system designs.",
+      "path": "skills/robotics-perception-planning",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 3
+    },
+    {
+      "name": "rtl-fpga-workflow",
+      "description": "Design, review, and debug Verilog or SystemVerilog and FPGA work including interfaces, testbenches, reset strategy, clock-domain crossings, synthesis constraints, and timing-closure preparation. Use when writing RTL, planning an FPGA prototype, reviewing a testbench, or turning a hardware paper or spec into simulatable modules.",
+      "path": "skills/rtl-fpga-workflow",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": true,
+        "assets": false
+      },
+      "file_count": 6
+    },
+    {
+      "name": "systems-performance-review",
+      "description": "Review CS and EE system designs for latency, throughput, memory, power, reliability, and concurrency risks. Use when designing distributed systems, edge pipelines, compilers and runtime stacks, accelerators, or hardware-software co-design, and when debugging bottlenecks in data or inference pipelines.",
+      "path": "skills/systems-performance-review",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "training-infra-debugging",
+      "description": "Debug ML training infrastructure including data loaders, distributed training, checkpointing, mixed precision, memory pressure, logging, and experiment orchestration. Use when runs diverge, slow down, OOM, deadlock, or produce inconsistent metrics across nodes, seeds, or restarts.",
+      "path": "skills/training-infra-debugging",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    },
+    {
+      "name": "wireless-communications-analysis",
+      "description": "Analyze wireless and communication-system research including channel models, modulation, coding, synchronization, detection, equalization, link adaptation, and MIMO tradeoffs. Use when designing communication experiments, debugging BER or throughput behavior, comparing signal-processing and learning-based approaches, or reviewing communication-system papers.",
+      "path": "skills/wireless-communications-analysis",
+      "resources": {
+        "agents": true,
+        "references": false,
+        "scripts": false,
+        "assets": false
+      },
+      "file_count": 2
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DSP Algorithm Design"
+  short_description: "Design signal-processing pipelines and error budgets"
+  default_prompt: "Use $dsp-algorithm-design to turn this DSP idea into a rigorous pipeline and validation plan."
