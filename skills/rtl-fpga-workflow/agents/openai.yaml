@@ -1,0 +1,4 @@
+interface:
+  display_name: "RTL FPGA Workflow"
+  short_description: "Review RTL, testbenches, and FPGA risks"
+  default_prompt: "Use $rtl-fpga-workflow to review this Verilog or FPGA design and define the right simulation checks."

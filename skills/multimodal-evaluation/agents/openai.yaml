@@ -1,0 +1,4 @@
+interface:
+  display_name: "Multimodal Evaluation"
+  short_description: "Evaluate vision, audio, video, and document models"
+  default_prompt: "Use $multimodal-evaluation to audit this multimodal benchmark or model result."

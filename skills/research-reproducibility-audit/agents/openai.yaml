@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reproducibility Audit"
+  short_description: "Audit papers, code, and artifacts for reproducibility"
+  default_prompt: "Use $research-reproducibility-audit to check whether this paper or repo is actually reproducible."

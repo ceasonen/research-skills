@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codebase Onboarding"
+  short_description: "Map unfamiliar repos and find the safe edit surface"
+  default_prompt: "Use $codebase-onboarding to map this repository and show me where to start."

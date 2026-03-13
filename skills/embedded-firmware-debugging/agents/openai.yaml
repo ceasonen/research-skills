@@ -1,0 +1,4 @@
+interface:
+  display_name: "Embedded Firmware Debugging"
+  short_description: "Debug MCU, RTOS, and peripheral issues"
+  default_prompt: "Use $embedded-firmware-debugging to isolate this board bring-up or peripheral bug."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "LaTeX Build Camera Ready"
+  short_description: "Fix LaTeX builds and submission artifacts"
+  default_prompt: "Use $latex-build-camera-ready to fix this LaTeX build, bibliography, or camera-ready issue."

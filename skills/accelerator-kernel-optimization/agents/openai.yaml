@@ -1,0 +1,4 @@
+interface:
+  display_name: "Accelerator Kernel Optimization"
+  short_description: "Optimize kernels, memory traffic, and transfer paths"
+  default_prompt: "Use $accelerator-kernel-optimization to analyze this kernel or accelerator workload bottleneck."

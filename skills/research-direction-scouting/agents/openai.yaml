@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Direction Scouting"
+  short_description: "Rank research ideas by novelty, feasibility, and risk"
+  default_prompt: "Use $research-direction-scouting to rank these project ideas and recommend the strongest direction."

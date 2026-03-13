@@ -1,0 +1,4 @@
+interface:
+  display_name: "Distributed Systems Debugging"
+  short_description: "Debug retries, replicas, partitions, and tail latency"
+  default_prompt: "Use $distributed-systems-debugging to isolate this distributed systems bug or performance cliff."

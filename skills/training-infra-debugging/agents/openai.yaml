@@ -1,0 +1,4 @@
+interface:
+  display_name: "Training Infra Debugging"
+  short_description: "Debug distributed training, OOM, hangs, and resumes"
+  default_prompt: "Use $training-infra-debugging to isolate this training failure or performance collapse."

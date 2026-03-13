@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wireless Communications Analysis"
+  short_description: "Review channels, receivers, coding, and link tradeoffs"
+  default_prompt: "Use $wireless-communications-analysis to analyze this communication-system design or paper."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ML Experiment Planner"
+  short_description: "Plan baselines, ablations, and compute budgets"
+  default_prompt: "Use $ml-experiment-planner to design a reproducible experiment plan for this research idea."

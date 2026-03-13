@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hardware Formal Verification"
+  short_description: "Write and review assertions and proof targets for RTL"
+  default_prompt: "Use $hardware-formal-verification to derive assertions and a proof plan for this RTL block."
