@@ -1,5 +1,5 @@
 {
-  "skill_count": 27,
+  "skill_count": 28,
   "skills": [
     {
       "name": "accelerator-kernel-optimization",
@@ -228,6 +228,18 @@
         "assets": false
       },
       "file_count": 2
+    },
+    {
+      "name": "research-method-figures",
+      "description": "Design, redraw, and review editable architecture diagrams, method overviews, multimodal pipelines, and module insets for research papers. Use when turning a manuscript, model code, or reference figure into a Draw.io diagram, TikZ source, or publication-ready vector figure. Use a data-plotting workflow for quantitative charts.",
+      "path": "skills/research-method-figures",
+      "resources": {
+        "agents": true,
+        "references": true,
+        "scripts": false,
+        "assets": true
+      },
+      "file_count": 6
     },
     {
       "name": "research-paper-writing",

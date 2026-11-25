@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Method Figures"
+  short_description: "Editable paper architecture and method figures"
+  default_prompt: "Use $research-method-figures to turn my method into an editable figure and a publication-ready export."
