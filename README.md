@@ -1,5 +1,8 @@
 # research-skills
 
+[Live project page](https://ceasonen.github.io/research-skills/) · [Standalone showcase source](docs/showcase/)
+
+
 Personal Codex skills for CS/EE research workflows. This repository mirrors the non-system skills from my local Codex setup and keeps them in a clean, installable GitHub layout.
 
 ## Repository layout
