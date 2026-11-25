@@ -231,15 +231,15 @@
     },
     {
       "name": "research-method-figures",
-      "description": "Design, redraw, and review editable architecture diagrams, method overviews, multimodal pipelines, and module insets for research papers. Use when turning a manuscript, model code, or reference figure into a Draw.io diagram, TikZ source, or publication-ready vector figure. Use a data-plotting workflow for quantitative charts.",
+      "description": "Design, redraw, and review editable paper figures, including method overviews, model architectures, pipelines, schedules, qualitative comparisons, diagnostics, and data-driven plots. Use the paper-figure atlas to choose a layout, then produce Draw.io, TikZ, or data-backed vector output from the current manuscript, code, or evidence.",
       "path": "skills/research-method-figures",
       "resources": {
         "agents": true,
         "references": true,
-        "scripts": false,
+        "scripts": true,
         "assets": true
       },
-      "file_count": 6
+      "file_count": 51
     },
     {
       "name": "research-paper-writing",

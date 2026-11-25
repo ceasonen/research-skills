@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron">
+  <diagram id="query-parallel-heads" name="Query Parallel Heads">
+    <mxGraphModel page="1" pageWidth="920" pageHeight="281" grid="1" gridSize="10" pageScale="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="guides" parent="0" value="Panel guides" />
+        <mxCell id="1" parent="0" value="Editable figure" />
+        <mxCell id="canvas" parent="guides" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#ffffff;strokeColor=#afbdcd;strokeWidth=1.25;fontColor=#26384f;fontSize=18;fontStyle=0;">
+          <mxGeometry x="0" y="0" width="920" height="281" as="geometry" />
+        </mxCell>
+        <mxCell id="image" parent="guides" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#e5eff9;strokeColor=#6586aa;strokeWidth=1.25;fontColor=#26384f;fontSize=18;fontStyle=0;">
+          <mxGeometry x="19" y="20" width="425" height="242" as="geometry" />
+        </mxCell>
+        <mxCell id="image-title" parent="guides" vertex="1" value="Image representation" style="html=0;fontFamily=Arial;shadow=0;text;align=left;verticalAlign=middle;spacing=0;fontColor=#26384f;fontSize=17;fontStyle=1;">
+          <mxGeometry x="35" y="27" width="393" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="predict" parent="guides" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#e0f1ed;strokeColor=#5a9188;strokeWidth=1.25;fontColor=#26384f;fontSize=18;fontStyle=0;">
+          <mxGeometry x="465" y="20" width="437" height="242" as="geometry" />
+        </mxCell>
+        <mxCell id="predict-title" parent="guides" vertex="1" value="Set prediction" style="html=0;fontFamily=Arial;shadow=0;text;align=left;verticalAlign=middle;spacing=0;fontColor=#26384f;fontSize=17;fontStyle=1;">
+          <mxGeometry x="481" y="27" width="405" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="input" parent="1" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;group;container=1;collapsible=0;">
+          <mxGeometry x="37" y="120" width="107" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="input-bg" parent="input" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#ffffff;strokeColor=#afbdcd;strokeWidth=1.25;fontColor=#26384f;fontSize=18;fontStyle=0;">
+          <mxGeometry x="0" y="0" width="107" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="input-cue" parent="input" vertex="1" value="Input image" style="html=0;fontFamily=Arial;shadow=0;text;align=center;verticalAlign=middle;spacing=0;fontColor=#52637b;fontSize=14;fontStyle=0;">
+          <mxGeometry x="0" y="0" width="107" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="backbone" parent="1" vertex="1" value="Backbone" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#ffffff;strokeColor=#afbdcd;strokeWidth=1.25;fontColor=#26384f;fontSize=16;fontStyle=0;">
+          <mxGeometry x="173" y="120" width="102" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="encoder" parent="1" vertex="1" value="Encoder" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#eee7f6;strokeColor=#9782ae;strokeWidth=1.25;fontColor=#26384f;fontSize=16;fontStyle=0;">
+          <mxGeometry x="308" y="120" width="101" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="decoder" parent="1" vertex="1" value="Shared&#10;query decoder" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#fbefd9;strokeColor=#a8814d;strokeWidth=1.25;fontColor=#26384f;fontSize=16;fontStyle=0;">
+          <mxGeometry x="502" y="126" width="133" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="queries" parent="1" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;group;container=1;collapsible=0;">
+          <mxGeometry x="527" y="70" width="74" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="queries-0" parent="queries" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#e5eff9;strokeColor=#6586aa;strokeWidth=1.25;fontColor=#26384f;fontSize=18;fontStyle=0;">
+          <mxGeometry x="0" y="0" width="21" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="queries-1" parent="queries" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#e0f1ed;strokeColor=#5a9188;strokeWidth=1.25;fontColor=#26384f;fontSize=18;fontStyle=0;">
+          <mxGeometry x="26" y="0" width="21" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="queries-2" parent="queries" vertex="1" value="" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#eee7f6;strokeColor=#9782ae;strokeWidth=1.25;fontColor=#26384f;fontSize=18;fontStyle=0;">
+          <mxGeometry x="52" y="0" width="21" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="line-1" parent="1" edge="1" style="edgeStyle=segmentEdgeStyle;rounded=0;endArrow=block;endFill=1;endSize=7;strokeColor=#405770;strokeWidth=1.55;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="input" target="backbone">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line-2" parent="1" edge="1" style="edgeStyle=segmentEdgeStyle;rounded=0;endArrow=block;endFill=1;endSize=7;strokeColor=#405770;strokeWidth=1.55;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="backbone" target="encoder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line-3" parent="1" edge="1" style="edgeStyle=segmentEdgeStyle;rounded=0;endArrow=block;endFill=1;endSize=7;strokeColor=#405770;strokeWidth=1.55;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="encoder" target="decoder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line-4" parent="1" edge="1" style="edgeStyle=segmentEdgeStyle;rounded=0;endArrow=block;endFill=1;endSize=7;strokeColor=#405770;strokeWidth=1.55;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" source="queries" target="decoder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="out-0" parent="1" vertex="1" value="Prediction 1" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#ffffff;strokeColor=#afbdcd;strokeWidth=1.25;fontColor=#26384f;fontSize=16;fontStyle=0;">
+          <mxGeometry x="723" y="79" width="145" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="line-5" parent="1" edge="1" style="edgeStyle=segmentEdgeStyle;rounded=0;endArrow=block;endFill=1;endSize=7;strokeColor=#405770;strokeWidth=1.55;exitX=1;exitY=0.2;entryX=0;entryY=0.5;" source="decoder" target="out-0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="684" y="137" />
+              <mxPoint x="684" y="97.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out-1" parent="1" vertex="1" value="Prediction 2" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#ffffff;strokeColor=#afbdcd;strokeWidth=1.25;fontColor=#26384f;fontSize=16;fontStyle=0;">
+          <mxGeometry x="723" y="137" width="145" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="line-6" parent="1" edge="1" style="edgeStyle=segmentEdgeStyle;rounded=0;endArrow=block;endFill=1;endSize=7;strokeColor=#405770;strokeWidth=1.55;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="decoder" target="out-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="684" y="153" />
+              <mxPoint x="684" y="155.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out-2" parent="1" vertex="1" value="Prediction 3" style="html=0;fontFamily=Arial;shadow=0;shape=rectangle;rounded=1;arcSize=13;fillColor=#ffffff;strokeColor=#afbdcd;strokeWidth=1.25;fontColor=#26384f;fontSize=16;fontStyle=0;">
+          <mxGeometry x="723" y="195" width="145" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="line-7" parent="1" edge="1" style="edgeStyle=segmentEdgeStyle;rounded=0;endArrow=block;endFill=1;endSize=7;strokeColor=#405770;strokeWidth=1.55;exitX=1;exitY=0.8;entryX=0;entryY=0.5;" source="decoder" target="out-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="684" y="169" />
+              <mxPoint x="684" y="213.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

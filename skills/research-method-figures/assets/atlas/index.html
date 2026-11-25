@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>论文图谱</title>
+<style>
+:root { color-scheme: light; font: 16px/1.62 system-ui,sans-serif; --ink: #203249; --muted: #4f637a; --rule: #d6e0eb; --accent: #245d88; color:var(--ink); background:#f6f8fc; }
+* { box-sizing:border-box; }
+body { margin:0; }
+.shell { max-width:1120px; margin:auto; padding:36px clamp(16px,4vw,40px) 56px; }
+h1,h2,h3,p { margin:0; }
+h1 { font-size:clamp(1.9rem,5vw,3.3rem); line-height:1.16; letter-spacing:-.04em; }
+header p { color:var(--muted); margin-top:.65rem; }
+nav { display:flex; flex-wrap:wrap; gap:.4rem 1rem; border-block:1px solid var(--rule); margin-top:1.15rem; padding:.7rem 0; }
+a { color:var(--accent); text-decoration-thickness:.07em; text-underline-offset:.19em; }
+a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+section { scroll-margin-top:16px; margin-top:1.85rem; }
+h2 { font-size:1.4rem; margin-bottom:.65rem; }
+.grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.card { display:flex; flex-direction:column; min-width:0; border:1px solid var(--rule); border-radius:9px; overflow:hidden; background:#fff; }
+.art { display:grid; place-items:center; padding:15px; height:clamp(160px,20vw,225px); border-bottom:1px solid var(--rule); background:#fbfcfe; }
+.art img { width:100%; height:100%; min-height:0; object-fit:contain; }
+.card-body { padding:14px 16px 15px; }
+h3 { font-size:1.06rem; }
+.source { font-size:.88rem; margin:.16rem 0 .48rem; }
+.actions { display:flex; flex-wrap:wrap; gap:.2rem .85rem; align-items:baseline; margin-top:.65rem; font-weight:650; }
+code { overflow-wrap:anywhere; color:var(--muted); }
+@media (max-width:690px) { .grid {grid-template-columns:minmax(0,1fr);} }
+</style>
+</head>
+<body><main class="shell">
+<header><h1>论文图谱</h1><p>24 篇论文的版式参考与可编辑模板。选择最接近你要表达的关系，再替换真实内容。</p><nav aria-label="按用途浏览"><a href="#family-1">架构与机制</a><a href="#family-2">流程与调度</a><a href="#family-3">定性与诊断</a><a href="#family-4">定量与消融</a></nav></header>
+<section id="family-1"><h2>架构与机制</h2><div class="grid"><article id="multimodal-method" class="card">
+  <a class="art" href="../multimodal-method.svg" aria-label="双分支对齐与融合 SVG"><img src="../multimodal-method.svg" alt="双分支对齐与融合模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>双分支对齐与融合</h3>
+    <p class="source"><a href="https://arxiv.org/html/2611.32828v1#S2.F2">SAVERA · Fig. 2</a></p>
+    <p>输入来源用并行轨标清。把训练约束画为虚线，再单开一块放大融合算子。</p>
+    <p class="actions"><a href="../multimodal-method.drawio">Draw.io 源文件</a><a href="../multimodal-method.svg">SVG</a></p>
+  </div>
+</article>
+<article id="stateful-memory" class="card">
+  <a class="art" href="previews/stateful-memory.svg" aria-label="有状态记忆回路 SVG"><img src="previews/stateful-memory.svg" alt="有状态记忆回路模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>有状态记忆回路</h3>
+    <p class="source"><a href="https://arxiv.org/html/2408.00714v2#S4.F3">SAM 2 · Fig. 3</a></p>
+    <p>当前步数据流走主线，历史状态读取与下一步写回走回路。分别标明时刻。</p>
+    <p class="actions"><a href="diagrams/stateful-memory.drawio">Draw.io 源文件</a><a href="previews/stateful-memory.svg">SVG</a></p>
+  </div>
+</article>
+<article id="token-grammar" class="card">
+  <a class="art" href="previews/token-grammar.svg" aria-label="多任务 Token 序列 SVG"><img src="previews/token-grammar.svg" alt="多任务 Token 序列模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>多任务 Token 序列</h3>
+    <p class="source"><a href="https://arxiv.org/html/2408.12528v7#S2.F2">Show-o · Fig. 2</a></p>
+    <p>同一底层模型上方并列展示任务输入，使用固定色和位置表示视觉、文本与控制 token。</p>
+    <p class="actions"><a href="diagrams/token-grammar.drawio">Draw.io 源文件</a><a href="previews/token-grammar.svg">SVG</a></p>
+  </div>
+</article>
+<article id="split-encoders-shared-core" class="card">
+  <a class="art" href="previews/split-encoders-shared-core.svg" aria-label="独立编码与共享核心 SVG"><img src="previews/split-encoders-shared-core.svg" alt="独立编码与共享核心模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>独立编码与共享核心</h3>
+    <p class="source"><a href="https://arxiv.org/html/2410.13848v1#S3.F2">Janus · Fig. 2</a></p>
+    <p>让专用编码器各自成列，共享骨干横跨两列。出口在各列上方与实际任务匹配。</p>
+    <p class="actions"><a href="diagrams/split-encoders-shared-core.drawio">Draw.io 源文件</a><a href="previews/split-encoders-shared-core.svg">SVG</a></p>
+  </div>
+</article>
+<article id="residual-adapter" class="card">
+  <a class="art" href="previews/residual-adapter.svg" aria-label="冻结主干与残差适配器 SVG"><img src="previews/residual-adapter.svg" alt="冻结主干与残差适配器模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>冻结主干与残差适配器</h3>
+    <p class="source"><a href="https://arxiv.org/html/2302.05543v3#S3.F2">ControlNet · Fig. 2</a></p>
+    <p>用改动前后两面板隔离新模块。保留原来的直通路径，把新增条件支路接到实际求和点。</p>
+    <p class="actions"><a href="diagrams/residual-adapter.drawio">Draw.io 源文件</a><a href="previews/residual-adapter.svg">SVG</a></p>
+  </div>
+</article>
+<article id="two-stage-bridge" class="card">
+  <a class="art" href="previews/two-stage-bridge.svg" aria-label="两阶段训练桥接 SVG"><img src="previews/two-stage-bridge.svg" alt="两阶段训练桥接模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>两阶段训练桥接</h3>
+    <p class="source"><a href="https://arxiv.org/html/2301.12597v3#S1.F1">BLIP-2 · Fig. 1</a></p>
+    <p>两阶段复用模块的颜色与位置。分别标出训练目标和新增解码器，区分权重传承与特征流。</p>
+    <p class="actions"><a href="diagrams/two-stage-bridge.drawio">Draw.io 源文件</a><a href="previews/two-stage-bridge.svg">SVG</a></p>
+  </div>
+</article>
+<article id="query-parallel-heads" class="card">
+  <a class="art" href="previews/query-parallel-heads.svg" aria-label="共享解码器与并行预测头 SVG"><img src="previews/query-parallel-heads.svg" alt="共享解码器与并行预测头模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>共享解码器与并行预测头</h3>
+    <p class="source"><a href="https://arxiv.org/html/2005.12872v3#S3.F2">DETR · Fig. 2</a></p>
+    <p>先编码图像，再从独立入口注入查询。右侧用平行输出明确预测的是一个集合。</p>
+    <p class="actions"><a href="diagrams/query-parallel-heads.drawio">Draw.io 源文件</a><a href="previews/query-parallel-heads.svg">SVG</a></p>
+  </div>
+</article></div></section>
+<section id="family-2"><h2>流程与调度</h2><div class="grid"><article id="overlap-schedule" class="card">
+  <a class="art" href="previews/overlap-schedule.svg" aria-label="并行工作流时间轨 SVG"><img src="previews/overlap-schedule.svg" alt="并行工作流时间轨模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>并行工作流时间轨</h3>
+    <p class="source"><a href="https://arxiv.org/html/2407.08608v2#S3.F1">FlashAttention-3 · Fig. 1</a></p>
+    <p>在统一时间轴上交错画两条工作轨。只在定义了真实时间单位时按实际长度比较。</p>
+    <p class="actions"><a href="diagrams/overlap-schedule.drawio">Draw.io 源文件</a><a href="previews/overlap-schedule.svg">SVG</a></p>
+  </div>
+</article>
+<article id="visual-restyle" class="card">
+  <a class="art" href="previews/visual-restyle.svg" aria-label="重排前后对照 SVG"><img src="previews/visual-restyle.svg" alt="重排前后对照模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>重排前后对照</h3>
+    <p class="source"><a href="https://arxiv.org/html/2601.23265v2#S6.F6">PaperBanana · Fig. 6</a></p>
+    <p>并排展示同一组模块与连接的两种构图，便于核对视觉调整是否保留拓扑。</p>
+    <p class="actions"><a href="diagrams/visual-restyle.drawio">Draw.io 源文件</a><a href="previews/visual-restyle.svg">SVG</a></p>
+  </div>
+</article>
+<article id="asset-reassembly" class="card">
+  <a class="art" href="previews/asset-reassembly.svg" aria-label="资源提取、整理与重组 SVG"><img src="previews/asset-reassembly.svg" alt="资源提取、整理与重组模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>资源提取、整理与重组</h3>
+    <p class="source"><a href="https://arxiv.org/html/2605.30611v1#S3.F2">Crafter · Fig. 2</a></p>
+    <p>按交付物划分处理阶段，用可替换的中间对象清单说明各段如何交接。</p>
+    <p class="actions"><a href="diagrams/asset-reassembly.drawio">Draw.io 源文件</a><a href="previews/asset-reassembly.svg">SVG</a></p>
+  </div>
+</article>
+<article id="ray-sampling" class="card">
+  <a class="art" href="previews/ray-sampling.svg" aria-label="几何采样与聚合 SVG"><img src="previews/ray-sampling.svg" alt="几何采样与聚合模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>几何采样与聚合</h3>
+    <p class="source"><a href="https://arxiv.org/html/2003.08934v2#S2.F2">NeRF · Fig. 2</a></p>
+    <p>把几何示意接到求值和聚合链路。用有序采样点表达读序，让示意与运算能直接对照。</p>
+    <p class="actions"><a href="diagrams/ray-sampling.drawio">Draw.io 源文件</a><a href="previews/ray-sampling.svg">SVG</a></p>
+  </div>
+</article>
+<article id="receding-horizon" class="card">
+  <a class="art" href="previews/receding-horizon.svg" aria-label="观测、预测与执行窗口 SVG"><img src="previews/receding-horizon.svg" alt="观测、预测与执行窗口模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>观测、预测与执行窗口</h3>
+    <p class="source"><a href="https://arxiv.org/html/2303.04137v5#S1.F2">Diffusion Policy · Fig. 2</a></p>
+    <p>三条时间轨共享同一时刻原点。分别标出已观测片段、预测范围及实际执行的前缀。</p>
+    <p class="actions"><a href="diagrams/receding-horizon.drawio">Draw.io 源文件</a><a href="previews/receding-horizon.svg">SVG</a></p>
+  </div>
+</article>
+<article id="symbolic-interface" class="card">
+  <a class="art" href="previews/symbolic-interface.svg" aria-label="可检查的中间表示 SVG"><img src="previews/symbolic-interface.svg" alt="可检查的中间表示模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>可检查的中间表示</h3>
+    <p class="source"><a href="https://doi.org/10.1109/IJCNN69854.2026.11729294">DeepYOLO · Fig. 1</a></p>
+    <p>把报告字段放在感知与推理之间的独立面板。用真实字段展示局部接口，问题走额外输入端。</p>
+    <p class="actions"><a href="diagrams/symbolic-interface.drawio">Draw.io 源文件</a><a href="previews/symbolic-interface.svg">SVG</a></p>
+  </div>
+</article>
+<article id="feedback-review-loop" class="card">
+  <a class="art" href="previews/feedback-review-loop.svg" aria-label="规划、实现与定点复核 SVG"><img src="previews/feedback-review-loop.svg" alt="规划、实现与定点复核模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>规划、实现与定点复核</h3>
+    <p class="source"><a href="https://arxiv.org/html/2605.23527v1#S3.F2">LiveFigure · Fig. 2</a></p>
+    <p>采用分区工作流表达产物交接和返工。审查结果分成批准与带修订项返回两条路径。</p>
+    <p class="actions"><a href="diagrams/feedback-review-loop.drawio">Draw.io 源文件</a><a href="previews/feedback-review-loop.svg">SVG</a></p>
+  </div>
+</article></div></section>
+<section id="family-3"><h2>定性与诊断</h2><div class="grid"><article id="matched-comparison-grid" class="card">
+  <a class="art" href="previews/matched-comparison-grid.svg" aria-label="等条件结果矩阵 SVG"><img src="previews/matched-comparison-grid.svg" alt="等条件结果矩阵模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>等条件结果矩阵</h3>
+    <p class="source"><a href="https://arxiv.org/html/2307.09481v2#S3.F5">AnyDoor · Fig. 5</a></p>
+    <p>每行固定一个样例，每列固定方法或条件。保持裁剪、视角、比例与放大框位置一致。</p>
+    <p class="actions"><a href="diagrams/matched-comparison-grid.drawio">Draw.io 源文件</a><a href="previews/matched-comparison-grid.svg">SVG</a></p>
+  </div>
+</article>
+<article id="source-feature-pairs" class="card">
+  <a class="art" href="previews/source-feature-pairs.svg" aria-label="原图与特征成对展示 SVG"><img src="previews/source-feature-pairs.svg" alt="原图与特征成对展示模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>原图与特征成对展示</h3>
+    <p class="source"><a href="https://arxiv.org/html/2304.07193v2#S1.F1">DINOv2 · Fig. 1</a></p>
+    <p>每组样例紧邻放置输入和特征图。横向比较时保持投影或归一化方案可解释。</p>
+    <p class="actions"><a href="diagrams/source-feature-pairs.drawio">Draw.io 源文件</a><a href="previews/source-feature-pairs.svg">SVG</a></p>
+  </div>
+</article>
+<article id="ambiguity-alternatives" class="card">
+  <a class="art" href="previews/ambiguity-alternatives.svg" aria-label="共享提示与多种有效输出 SVG"><img src="previews/ambiguity-alternatives.svg" alt="共享提示与多种有效输出模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>共享提示与多种有效输出</h3>
+    <p class="source"><a href="https://arxiv.org/html/2304.02643v1#S2.F3">Segment Anything · Fig. 3</a></p>
+    <p>单独展示共同输入和提示，候选图保持相同视角。正文说明多种结果为何都成立。</p>
+    <p class="actions"><a href="diagrams/ambiguity-alternatives.drawio">Draw.io 源文件</a><a href="previews/ambiguity-alternatives.svg">SVG</a></p>
+  </div>
+</article>
+<article id="attribution-comparison" class="card">
+  <a class="art" href="previews/attribution-comparison.svg" aria-label="同图归因矩阵 SVG"><img src="previews/attribution-comparison.svg" alt="同图归因矩阵模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>同图归因矩阵</h3>
+    <p class="source"><a href="https://doi.org/10.24963/ijcai.2026/774">OrthKD · Fig. 2</a></p>
+    <p>每行复用同一输入，列按模型排齐。图注交代归因方法、目标类别、颜色范围及可比性。</p>
+    <p class="actions"><a href="diagrams/attribution-comparison.drawio">Draw.io 源文件</a><a href="previews/attribution-comparison.svg">SVG</a></p>
+  </div>
+</article>
+<article id="images-with-metric-rows" class="card">
+  <a class="art" href="previews/images-with-metric-rows.svg" aria-label="图像证据下接两行指标 SVG"><img src="previews/images-with-metric-rows.svg" alt="图像证据下接两行指标模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>图像证据下接两行指标</h3>
+    <p class="source"><a href="https://arxiv.org/html/2208.12242v2#Sx4.F11">DreamBooth · Fig. 11</a></p>
+    <p>图像和量化指标同列对齐。展示度量有分歧的实例时，同时列出两个指标。</p>
+    <p class="actions"><a href="diagrams/images-with-metric-rows.drawio">Draw.io 源文件</a><a href="previews/images-with-metric-rows.svg">SVG</a></p>
+  </div>
+</article></div></section>
+<section id="family-4"><h2>定量与消融</h2><div class="grid"><article id="compute-envelope" class="card">
+  <a class="art" href="previews/compute-envelope.svg" aria-label="算力预算与最优包络 SVG"><img src="previews/compute-envelope.svg" alt="算力预算与最优包络模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>算力预算与最优包络</h3>
+    <p class="source"><a href="https://arxiv.org/html/2203.15556v1#S3.F2">Chinchilla · Fig. 2</a></p>
+    <p>用一面板展示原始运行，另一面板展示共同预算区间内的下包络。标注横轴单位及插值定义。</p>
+    <p class="actions"><a href="../../scripts/render-atlas-plot.py">绘图脚本</a><a href="previews/compute-envelope.svg">SVG</a><code>compute-envelope</code></p>
+  </div>
+</article>
+<article id="training-small-multiples" class="card">
+  <a class="art" href="previews/training-small-multiples.svg" aria-label="共享刻度的训练曲线 SVG"><img src="previews/training-small-multiples.svg" alt="共享刻度的训练曲线模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>共享刻度的训练曲线</h3>
+    <p class="source"><a href="https://arxiv.org/html/2212.09748v2#A1.F13">DiT · Fig. 13</a></p>
+    <p>将训练配置拆为子图，颜色和线型代表相同角色。共享坐标方便比较趋势和收敛速度。</p>
+    <p class="actions"><a href="../../scripts/render-atlas-plot.py">绘图脚本</a><a href="previews/training-small-multiples.svg">SVG</a><code>training-small-multiples</code></p>
+  </div>
+</article>
+<article id="mechanism-heatmaps" class="card">
+  <a class="art" href="previews/mechanism-heatmaps.svg" aria-label="并排机制热图 SVG"><img src="previews/mechanism-heatmaps.svg" alt="并排机制热图模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>并排机制热图</h3>
+    <p class="source"><a href="https://arxiv.org/html/2301.05217v3#S4.F4">Progress Measures for Grokking · Fig. 4</a></p>
+    <p>同一坐标系统各面板可排齐。量纲不同各用独立色条，量纲相同才考虑共享色域。</p>
+    <p class="actions"><a href="../../scripts/render-atlas-plot.py">绘图脚本</a><a href="previews/mechanism-heatmaps.svg">SVG</a><code>mechanism-heatmaps</code></p>
+  </div>
+</article>
+<article id="paired-shift-scores" class="card">
+  <a class="art" href="previews/paired-shift-scores.svg" aria-label="分布变化下的配对比较 SVG"><img src="previews/paired-shift-scores.svg" alt="分布变化下的配对比较模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>分布变化下的配对比较</h3>
+    <p class="source"><a href="https://arxiv.org/html/2103.00020v1#S3.F13">CLIP · Fig. 13</a></p>
+    <p>把相同数据域的两个方法配成一行。连接两点后显示原单位差值，避免仅看单项绝对分。</p>
+    <p class="actions"><a href="../../scripts/render-atlas-plot.py">绘图脚本</a><a href="previews/paired-shift-scores.svg">SVG</a><code>paired-shift-scores</code></p>
+  </div>
+</article>
+<article id="temporal-evidence" class="card">
+  <a class="art" href="previews/temporal-evidence.svg" aria-label="时间响应与真值区间 SVG"><img src="previews/temporal-evidence.svg" alt="时间响应与真值区间模板" loading="lazy"></a>
+  <div class="card-body">
+    <h3>时间响应与真值区间</h3>
+    <p class="source"><a href="https://arxiv.org/abs/2609.23376">OV-OrthKD · Fig. 3</a></p>
+    <p>小图共用时间和分数刻度。用真实标注区间做背景，曲线与原始视频按同一时间戳对齐。</p>
+    <p class="actions"><a href="../../scripts/render-atlas-plot.py">绘图脚本</a><a href="previews/temporal-evidence.svg">SVG</a><code>temporal-evidence</code></p>
+  </div>
+</article></div></section>
+</main></body>
+</html>

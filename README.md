@@ -56,7 +56,7 @@ python scripts/validate_repo.py
 - [`paper-to-implementation`](skills/paper-to-implementation): Convert papers, specs, and diagrams into staged implementation plans.
 - [`peer-review-rebuttal`](skills/peer-review-rebuttal): Draft evidence-backed rebuttals and revision plans.
 - [`research-direction-scouting`](skills/research-direction-scouting): Rank project directions by novelty, feasibility, and risk.
-- [`research-method-figures`](skills/research-method-figures): Draw editable paper architecture and method figures with [Draw.io](skills/research-method-figures/assets/multimodal-method.drawio) and [TikZ](skills/research-method-figures/assets/residual-gate.tex) examples.
+- [`research-method-figures`](skills/research-method-figures): Browse the [24-paper figure atlas](skills/research-method-figures/references/figure-atlas.md) for editable architecture diagrams, workflows, qualitative evidence grids, and reproducible plots.
 - [`research-paper-writing`](skills/research-paper-writing): Refine paper structure, flow, and section-level writing quality.
 - [`research-reproducibility-audit`](skills/research-reproducibility-audit): Audit papers, code, and artifacts for reproducibility gaps.
 
